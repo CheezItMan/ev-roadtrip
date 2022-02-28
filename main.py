@@ -43,7 +43,6 @@ def ev_roadtrip_costs(vehicle_names, vehicle_ranges, vehicle_rental_prices):
 
         vehicles.append(car)
 
-    print(min_car)
     least_expensive_cars = []
     for car in vehicles:
         if car['total'] == min_car['total']:
