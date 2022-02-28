@@ -27,7 +27,7 @@ Ada is planning a roadtrip from Helena Montana to Adiecon in Seattle (1000km).  
 ### Wave 1:  Problem Statement
 
 - Each Vehicle has a `range` (an integer in km), a `name` (a string) and a rental price.
-- The function accepts a list of `vehicle_ranges`, `vehicle_names` and `vehicle_rental_prices`.
+- The function accepts a list of `vehicle_names`, `vehicle_ranges`, and `vehicle_rental_prices`.
 - A Vehicle on the route must charge before exceeding it's range.
 - Charging any vehicle is $5.00
 - Return the name of the least expensive vehicle to take on the trip along with the total expenses
