@@ -36,8 +36,6 @@ def ev_roadtrip_costs(vehicle_names, vehicle_ranges, vehicle_rental_prices):
 
         car['total'] += charging_total + meal_cost
 
-        print(f"{car['name']}: {car['total']}")
-        print(f"{min_car['name']}: {min_car['total']}")
         if car['total'] <= min_car['total']:
             min_car = car
 

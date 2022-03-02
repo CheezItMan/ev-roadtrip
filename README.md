@@ -24,32 +24,50 @@ Ada is planning a roadtrip from Helena Montana to Adiecon in Seattle (1000km).  
 * You must use at least one loop or iterator.
 * You must use at least one Dictionary or List to store your data.
 
-### Wave 1:  Problem Statement
+### Part 1:  Problem Statement
 
-- Each Vehicle has a `range` (an integer in km), a `name` (a string) and a rental price.
-- The function accepts a list of `vehicle_names`, `vehicle_ranges`, and `vehicle_rental_prices`.
-- A Vehicle on the route must charge before exceeding it's range.
-- Charging any vehicle is $5.00
-- Return the name of the least expensive vehicle to take on the trip along with the total expenses
+* Each Vehicle has a `range` (an integer in km), a `name` (a string) and a rental price.
+* The function accepts a list of `vehicle_names`, `vehicle_ranges`, and `vehicle_rental_prices`.
+* A Vehicle on the route must charge before exceeding it's range.
+* Charging any vehicle is $5.00
+* Print the name of the least expensive vehicle and the total amount it would cost take it on the trip
 
-### Wave 2:  Problem Statement
+**Example Output**:
+
+```
+  The least expensive vehicle is the Toyota Prius which will cost $879.00 to take on the trip.
+```
+
+### Part 2:  Problem Statement
 
 Ada has decided that she will stop to eat every 3 hours on the trip.
 
 **Assuming:**
 
-- Each car drives an average of 90 km/hr
-- Each charging station takes 1 hour to charge up the vehicle
-- Ada will spend $20 on each mealbreak
+* Each car drives an average of 90 km/hr
+* Each charging station takes 1 hour to charge up the vehicle
+* Ada will spend $20 on each mealbreak
 
 Adjust the calculations and determine the total expenses.
 
+**Example Output**:
+
+```
+  The least expensive vehicle is the Ford Mach-E which will cost $915.00 to take on the trip including meal expenses.
+```
+
+
 ### Going Beyond: Handling Ties
 
-- When multiple cars are equally least expensive, return a list including each of the least expensive car names.
-- Print out the name and total expenses for each vehicle:
+* When multiple cars are equally least expensive, print a list including each of the least expensive car names.
+* Print out the name and total expenses for each vehicle:
+
+**Example Output**:
 
     ```
+    The least expensive vehicles are the ë-C4 and Ioniq 5 which will cost $855.00 to take on the trip including meal expenses.
+
+    All Vehicles:
     Vehicle: Model 3
     Total Expenses: $875.00
     Total Number of Charging Stops: 4
@@ -63,6 +81,6 @@ Adjust the calculations and determine the total expenses.
     Total Number of Charging Stops: 5
 
     Vehicle: Ioniq 5
-    Total Expenses: $885.00
+    Total Expenses: $855.00
     Total Number of Charging Stops: 6
     ```
